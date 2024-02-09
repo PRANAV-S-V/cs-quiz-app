@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding-left: 2rem;
-  padding-right: 2 rem;
+  padding-right: 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -91,4 +91,62 @@ body {
 .button-clicked{
   color: #12372A;
   background-color: #E8C872;
+}
+
+.main-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make the main-page div full height of the viewport */
+}
+
+.main-image {
+  flex: 1; /* Make the image take up all available space */
+}
+
+.main-components {
+  flex: 1; /* Make the components take up all available space */
+}
+
+/* CSS media queries for responsive design */
+@media only screen and (min-width:700px) and (max-width: 1200px) {
+  .main-page {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+  }
+  
+  .main-image, .main-components {
+    width: 100%; /* Set width to 100% on smaller screens */
+    text-align: center; /* Center content on smaller screens */
+  }
+}
+
+@media only screen and (min-width: 276px) and (max-width: 700px) {
+  .main-page {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+  }
+  
+  .main-image, .main-components {
+    width: 100%; /* Set width to 100% on smaller screens */
+    text-align: center; /* Center content on smaller screens */
+  }
+
+  .fluid-image{
+    height: 18rem;
+  }
+}
+
+@media only screen and (max-width: 276) {
+  .main-page {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+  }
+  
+  .main-image, .main-components {
+    width: 100%; /* Set width to 100% on smaller screens */
+    text-align: center; /* Center content on smaller screens */
+  }
+
+  .fluid-image{
+    height: 8rem;
+ 
+  }
 }
