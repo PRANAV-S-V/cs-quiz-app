@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+      background-color: #1f2544;
+      background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
+    
+  }
+  
+  .heading{
+    color: #fff;
+    font-family: 'Sixtyfour', sans-serif;
+    font-size: 3rem;
+  }
+
+.question-style{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-size: 4rem;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#score-board{
+    color: #fff;
+    font-size: 3rem;
+    font-family: 'Protest Guerrilla', sans-serif;;
+}
+
+.option-style{
+    color: #161A30;
+    font-size: 2rem;
+    width: 16rem;
+    padding: 8px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Protest Strike', sans-serif;
+    border-radius: 10px;
+}
+
+.option-body {
+    padding: 25px 50px;
+    display: grid;
+    grid-template-columns: 1fr auto; /* Two columns */
+    grid-auto-rows: auto; /* Automatically sized rows */
+    gap: 10px; /* Gap between items */
+}
+
+.add-option-anime{
+    background-color: #F6D776;
+    color: black;
+}
+
+@media only screen and (max-width:600px) {
+    .option-style {
+        color: #161A30;
+        font-size: 2rem;
+        width: 14rem;
+        padding: 0;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Protest Strike', sans-serif;
+    }
+
+    .option-body {
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repet(2, 1fr); /* Set to one column */
+        grid-auto-rows: auto; /* Automatically sized rows */
+        gap: 4px; /* Gap between items */
+    }
+
+
+    .add-option-anime{
+        background-color: #F6D776;
+        color: black;
+    }
+
+
+}

@@ -1,10 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './components/App';
+import React from "react";
+import ReactDOM from "react-dom";
+import Quiz from "./components/Quiz";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
- <App />, root
+const quizId = document.getElementById("quizRoot");
+
+ReactDOM.render(
+  <Quiz />, quizId  
 );
-
-
